@@ -1,0 +1,12 @@
+<main>
+    <nav>
+        <div>
+            <p id="logo">Chats</p>
+        </div>
+        <div>
+            <a href="<?php echo e(route('accueil')); ?>">Accueil</a>
+            <a href="<?php echo e(route('faits.index')); ?>">Liste des faits</a>
+            <a href="<?php echo e(route('faits.create')); ?>">Ajout d'un fait</a>
+        </div>
+    </nav>
+<?php /**PATH C:\Users\clola\Downloads\fait_chats\fait_chats\resources\views/components/nav.blade.php ENDPATH**/ ?>
