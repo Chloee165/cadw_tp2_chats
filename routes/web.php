@@ -11,13 +11,13 @@ Route::get('/', [FaitController::class, 'home'])
 Route::get('/faits', [FaitController::class, 'index'])
     ->name('faits.index');
 
-// Affiche un fait
-Route::get('/faits/{id}', [FaitController::class, 'show'])
-    ->name('faits.show');
-
 // Formulaire d'ajout d'un fait
 Route::get('/faits/create', [FaitController::class, 'create'])
     ->name('faits.create');
+    
+// Affiche un fait
+Route::get('/faits/{id}', [FaitController::class, 'show'])
+    ->name('faits.show');
 
 // Enregistre un nouveau fait
 Route::post('/faits/store', [FaitController::class, 'store'])

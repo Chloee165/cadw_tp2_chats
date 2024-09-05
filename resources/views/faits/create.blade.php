@@ -28,7 +28,6 @@
         <form action="{{ route('faits.store') }}" method="POST">
             @csrf
             <div class="mb-3">
-                <label for="contenu" class="form-label">Fait</label>
                 <textarea id="contenu" name="contenu" rows="4" class="form-control @error('contenu') is-invalid @enderror" placeholder="Entrez le fait ici...">{{ old('contenu') }}</textarea>
                 <!-- Affichage d'un message d'erreur si la validation échoue -->
                 @error('contenu')
@@ -38,7 +37,7 @@
                 @enderror
             </div>
 
-            <button type="submit" class="btn btn-primary">Ajouter le fait</button>
+            <button id="btn" type="submit">Ajouter le fait</button>
         </form>
     </main>
 </x-layout>
